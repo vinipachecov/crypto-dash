@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import WelcomeMessage from './WelcomeMessage';
+import WelcomeMessage from '../Settings/WelcomeMessage';
 import styled, { css } from 'styled-components';
 import AppLayout from './AppLayout';
 import AppBar from './AppBar'
 import { AppProvider } from './AppProvider';
+import Settings from '../Settings';
 const MyButton = styled.button`
   color: green;
   ${props => props.primary && css`
@@ -22,7 +23,7 @@ function App() {
      <AppLayout>
        <AppProvider>
        <AppBar/>
-      <WelcomeMessage />           
+      <Settings />
       </AppProvider>
      </AppLayout>   
 
