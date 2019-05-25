@@ -3,6 +3,7 @@ import './App.css';
 import WelcomeMessage from './WelcomeMessage';
 import styled, { css } from 'styled-components';
 import AppLayout from './AppLayout';
+import AppBar from './AppBar'
 const MyButton = styled.button`
   color: green;
   ${props => props.primary && css`
@@ -18,6 +19,7 @@ const TomatoButton = styled(MyButton)`
 function App() {
   return (   
      <AppLayout>
+       <AppBar/>
       <WelcomeMessage />           
      </AppLayout>        
   );
