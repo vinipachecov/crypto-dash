@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+body {
+  background: #010e2c;
+  color: white;
+}
